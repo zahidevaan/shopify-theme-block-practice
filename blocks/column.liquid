@@ -1,0 +1,16 @@
+<div class="custom-column" {{ block.shopify_attributes }}>
+  {% content_for 'blocks' %}
+</div>
+
+{% schema %}
+{
+  "name": "Column",
+  "blocks": [{ "type": "@theme" }, { "type": "@app" }],
+  "settings": [],
+  "presets": [
+    {
+      "name": "Column"
+    }
+  ]
+}
+{% endschema %}

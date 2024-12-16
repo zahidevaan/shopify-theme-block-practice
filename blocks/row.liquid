@@ -1,0 +1,73 @@
+<style>
+  .custom-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat({{block.settings.mobile_col}}, 1fr);
+  }
+
+  @media (min-width: 600px) {
+    .custom-row {
+      grid-template-columns: repeat({{block.settings.medium_col}}, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .custom-row {
+      grid-template-columns: repeat({{block.settings.large_col}}, 1fr);
+    }
+  }
+</style>
+
+<div class="custom-row" {{ block.shopify_attributes }} style="background-color: {{ block.settings.bg__color }};">
+  {% content_for 'blocks' %}
+</div>
+
+{% schema %}
+{
+  "name": "Row",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Row Settingss"
+    },
+    {
+      "type": "color",
+      "id": "bg__color",
+      "label": "Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "range",
+      "id": "mobile_col",
+      "label": "Mobile Device Column",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "medium_col",
+      "label": "Medium Device Column",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "large_col",
+      "label": "Large Device Column",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    }
+  ],
+  "blocks": [{ "type": "@theme" }, { "type": "@app" }],
+  "presets": [
+    {
+      "name": "Row"
+    }
+  ]
+}
+{% endschema %}

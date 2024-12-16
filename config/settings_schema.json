@@ -1,0 +1,62 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Custom",
+    "theme_version": "1.0.0",
+    "theme_author": "Zahid",
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://support.shopify.com/"
+  },
+  {
+    "name": "color_scheme",
+     "settings": [
+        {
+          "name": "Colors",
+          "settings": [
+            {
+              "type": "color",
+              "id": "primary_color",
+              "label": "Primary Color",
+              "default": "#007bff"
+            },
+            {
+              "type": "color",
+              "id": "secondary_color",
+              "label": "Secondary Color",
+              "default": "#6c757d"
+            },
+            {
+              "type": "color",
+              "id": "accent_color",
+              "label": "Accent Color",
+              "default": "#28a745"
+            },
+            {
+              "type": "color",
+              "id": "background_color",
+              "label": "Background Color",
+              "default": "#ffffff"
+            },
+            {
+              "type": "color",
+              "id": "text_color",
+              "label": "Text Color",
+              "default": "#212529"
+            },
+            {
+              "type": "color",
+              "id": "button_color",
+              "label": "Button Color",
+              "default": "#ffc107"
+            },
+            {
+              "type": "color",
+              "id": "button_text_color",
+              "label": "Button Text Color",
+              "default": "#ffffff"
+            }
+          ]
+        }
+      ]
+  }
+]

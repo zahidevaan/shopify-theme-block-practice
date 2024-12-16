@@ -1,0 +1,67 @@
+<h2
+  class="heading"
+  {{ block.shopify_attributes }}
+  style="color: {{block.settings.text__color}}; text-align: {{block.settings.align}}; font-size: {{block.settings.size}}px; font-weight: {{block.settings.font_weight}} "
+>
+  {{ block.settings.heading }}
+</h2>
+
+{% schema %}
+{
+  "name": "Heading",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text_alignment",
+      "id": "align",
+      "label": "Text Align",
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "size",
+      "label": "Size",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font Weight",
+      "default": "500",
+      "options": [
+        {
+          "label": "300",
+          "value": "300"
+        },
+        {
+          "label": "500",
+          "value": "500"
+        },
+        {
+          "label": "800",
+          "value": "800"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "text__color",
+      "label": "Text Color",
+      "default": "#000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Heading"
+    }
+  ]
+}
+{% endschema %}

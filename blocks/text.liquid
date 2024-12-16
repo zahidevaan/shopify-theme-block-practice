@@ -1,0 +1,66 @@
+<p
+  class="paragraph"
+  {{ block.shopify_attributes }}
+  style="color: {{block.settings.text__color}}; text-align: {{block.settings.align}}; font-size: {{block.settings.size}}px; font-weight: {{block.settings.font_weight}} "
+>
+  {{ block.settings.text }}
+</p>
+
+{% schema %}
+{
+  "name": "text",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Heading"
+    },
+    {
+      "type": "text_alignment",
+      "id": "align",
+      "label": "Text Align",
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "size",
+      "label": "Size",
+      "min": 8,
+      "max": 26,
+      "step": 1,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font Weight",
+      "options": [
+        {
+          "label": "300",
+          "value": "300"
+        },
+        {
+          "label": "500",
+          "value": "500"
+        },
+        {
+          "label": "800",
+          "value": "800"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "text__color",
+      "label": "Text Color",
+      "default": "#000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,91 @@
+<div class="ze-ul-lists-wrapper" {{ block.shopify_attributes }}>
+  <h2
+    class="list-heading"
+    style="color: {{block.settings.text__color}}; text-align: {{block.settings.align}}; font-size: {{block.settings.size}}px; margin-top: {{ block.settings.margin_top }}; margin-bottom: {{ block.settings.margin_bottom }}; font-weight: {{block.settings.font_weight}};"
+  >
+    {{ block.settings.text_heading }}
+  </h2>
+  <ul class="ze-ul-lists">
+    {% content_for 'blocks' %}
+  </ul>
+</div>
+{% schema %}
+{
+  "name": "List",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "text_heading",
+      "label": "List Heading",
+      "default": "Ingredients:"
+    },
+    {
+      "type": "text_alignment",
+      "id": "align",
+      "label": "Text Align",
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "size",
+      "label": "Size",
+      "min": 8,
+      "max": 26,
+      "step": 1,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font Weight",
+      "options": [
+        {
+          "label": "300",
+          "value": "300"
+        },
+        {
+          "label": "500",
+          "value": "500"
+        },
+        {
+          "label": "800",
+          "value": "800"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "text__color",
+      "label": "Text Color",
+      "default": "#000"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin top",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    }
+  ],
+  "blocks": [{ "type": "item" }],
+  "presets": [
+    {
+      "name": "List"
+    }
+  ]
+}
+{% endschema %}

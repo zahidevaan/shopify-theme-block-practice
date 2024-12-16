@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "custom-section",
+      "type": "main-404",
       "settings": {}
     }
   },

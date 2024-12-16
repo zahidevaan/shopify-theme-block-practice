@@ -1,23 +1,27 @@
 <style>
-  .custom-row {
+  .custom-section-{{- block.id -}}-row {
     width: 100%;
     display: grid;
     grid-template-columns: repeat({{block.settings.mobile_col}}, 1fr);
   }
 
   @media (min-width: 600px) {
-    .custom-row {
+    .custom-section-{{- block.id -}}-row {
       grid-template-columns: repeat({{block.settings.medium_col}}, 1fr);
     }
   }
   @media (min-width: 1024px) {
-    .custom-row {
+    .custom-section-{{- block.id -}}-row {
       grid-template-columns: repeat({{block.settings.large_col}}, 1fr);
     }
   }
 </style>
 
-<div class="custom-row" {{ block.shopify_attributes }} style="background-color: {{ block.settings.bg__color }};">
+<div
+  class="custom-section-{{- block.id -}}-row"
+  {{ block.shopify_attributes }}
+  style="background-color: {{ block.settings.bg__color }};"
+>
   {% content_for 'blocks' %}
 </div>
 

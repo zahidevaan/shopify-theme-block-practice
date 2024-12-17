@@ -1,4 +1,8 @@
-<div class="custom-column" {{ block.shopify_attributes }}>
+<div
+  class="custom-column"
+  {{ block.shopify_attributes }}
+  style="padding: {{- block.settings.padding -}}px; background-color: {{- block.settings.bg_color -}}"
+>
   {% content_for 'blocks' %}
 </div>
 
@@ -6,7 +10,27 @@
 {
   "name": "Column",
   "blocks": [{ "type": "@theme" }, { "type": "@app" }],
-  "settings": [],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Column Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding",
+      "min": 0,
+      "max": 100,
+      "default": 10,
+      "step": 1
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#fff"
+    }
+  ],
   "presets": [
     {
       "name": "Column"

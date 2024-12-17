@@ -1,0 +1,84 @@
+<style>
+    .image-{{block.id}}-block{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: {{block.settings.padding_bottom}}px;
+        padding-top: {{block.settings.padding_top}}px;
+        margin-bottom: {{block.settings.margin_bottom}}px;
+        margin-top: {{block.settings.margin_top}}px;
+    }
+
+    .image-{{block.id}}-block img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        padding: 0;
+        margin: 0;
+        display: block;
+  }
+</style>
+
+<div class="image-{{block.id}}-block" {{ block.shopify_attributes }}>
+  <img src="{{block.settings.image |  image_url }}" alt="" width="" height="">
+</div>
+
+{% schema %}
+{
+  "name": "Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin top",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image"
+    }
+  ]
+}
+{% endschema %}

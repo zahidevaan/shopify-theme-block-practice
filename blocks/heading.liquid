@@ -1,7 +1,7 @@
 <h2
   class="heading"
   {{ block.shopify_attributes }}
-  style="color: {{block.settings.text__color}}; text-align: {{block.settings.align}}; font-size: {{block.settings.size}}px; font-weight: {{block.settings.font_weight}} "
+  style="color: {{block.settings.text__color}}; text-align: {{block.settings.align}}; font-size: {{block.settings.size}}px; font-weight: {{block.settings.font_weight}}; margin-top: {{ block.settings.margin_top }}; margin-bottom: {{ block.settings.margin_bottom }}; "
 >
   {{ block.settings.heading }}
 </h2>
@@ -13,7 +13,8 @@
     {
       "type": "inline_richtext",
       "id": "heading",
-      "label": "Heading"
+      "label": "Heading",
+      "default": "Type your heading here"
     },
     {
       "type": "text_alignment",
@@ -56,6 +57,26 @@
       "id": "text__color",
       "label": "Text Color",
       "default": "#000"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin top",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
     }
   ],
   "presets": [

@@ -7,78 +7,305 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "custom-section": {
+      "type": "custom-section",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "row_iTbybC": {
+          "type": "row",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
+            "bg__color": "#ffffff",
+            "mobile_col": 1,
+            "medium_col": 2,
+            "large_col": 4,
+            "col__gap": 10
+          },
+          "blocks": {
+            "column_6mMYAf": {
+              "type": "column",
+              "settings": {
+                "padding": 10,
+                "bg_color": "#ffffff"
+              },
+              "blocks": {
+                "heading_LfjtNd": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Type your heading here",
+                    "align": "center",
+                    "size": 22,
+                    "font_weight": "800",
+                    "text__color": "#000000",
+                    "margin_top": 0,
+                    "margin_bottom": 0
+                  }
+                },
+                "lsit_dJb38y": {
+                  "type": "lsit",
+                  "settings": {
+                    "text_heading": "Ingredients:",
+                    "align": "left",
+                    "size": 16,
+                    "font_weight": "300",
+                    "text__color": "#000000",
+                    "margin_top": 0,
+                    "margin_bottom": 0
+                  },
+                  "blocks": {
+                    "item_VGDzLT": {
+                      "type": "item",
+                      "settings": {
+                        "text": "Hello",
+                        "align": "left",
+                        "size": 16,
+                        "font_weight": "300",
+                        "text__color": "#000000",
+                        "margin_top": 0,
+                        "margin_bottom": 0
+                      }
+                    },
+                    "item_V7G38X": {
+                      "type": "item",
+                      "settings": {
+                        "text": "Hi",
+                        "align": "left",
+                        "size": 16,
+                        "font_weight": "300",
+                        "text__color": "#000000",
+                        "margin_top": 0,
+                        "margin_bottom": 0
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "item_VGDzLT",
+                    "item_V7G38X"
+                  ]
+                }
+              },
+              "block_order": [
+                "heading_LfjtNd",
+                "lsit_dJb38y"
+              ]
+            },
+            "column_UrdwHG": {
+              "type": "column",
+              "settings": {
+                "padding": 10,
+                "bg_color": "#ffffff"
+              },
+              "blocks": {
+                "heading_khPXaa": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Type your heading here",
+                    "align": "center",
+                    "size": 22,
+                    "font_weight": "800",
+                    "text__color": "#000000",
+                    "margin_top": 0,
+                    "margin_bottom": 0
+                  }
+                },
+                "lsit_fJVQYn": {
+                  "type": "lsit",
+                  "settings": {
+                    "text_heading": "Ingredients:",
+                    "align": "left",
+                    "size": 16,
+                    "font_weight": "300",
+                    "text__color": "#000000",
+                    "margin_top": 0,
+                    "margin_bottom": 0
+                  },
+                  "blocks": {
+                    "item_LfrLB4": {
+                      "type": "item",
+                      "settings": {
+                        "text": "Hello",
+                        "align": "left",
+                        "size": 16,
+                        "font_weight": "300",
+                        "text__color": "#000000",
+                        "margin_top": 0,
+                        "margin_bottom": 0
+                      }
+                    },
+                    "item_ERGf9f": {
+                      "type": "item",
+                      "settings": {
+                        "text": "Hi",
+                        "align": "left",
+                        "size": 16,
+                        "font_weight": "300",
+                        "text__color": "#000000",
+                        "margin_top": 0,
+                        "margin_bottom": 0
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "item_LfrLB4",
+                    "item_ERGf9f"
+                  ]
+                }
+              },
+              "block_order": [
+                "heading_khPXaa",
+                "lsit_fJVQYn"
+              ]
+            },
+            "column_ga6zGV": {
+              "type": "column",
+              "settings": {
+                "padding": 10,
+                "bg_color": "#ffffff"
+              },
+              "blocks": {
+                "heading_mdmFte": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Type your heading here",
+                    "align": "center",
+                    "size": 22,
+                    "font_weight": "800",
+                    "text__color": "#000000",
+                    "margin_top": 0,
+                    "margin_bottom": 0
+                  }
+                },
+                "lsit_caqn9q": {
+                  "type": "lsit",
+                  "settings": {
+                    "text_heading": "Ingredients:",
+                    "align": "left",
+                    "size": 16,
+                    "font_weight": "300",
+                    "text__color": "#000000",
+                    "margin_top": 0,
+                    "margin_bottom": 0
+                  },
+                  "blocks": {
+                    "item_VqG6YF": {
+                      "type": "item",
+                      "settings": {
+                        "text": "Hello",
+                        "align": "left",
+                        "size": 16,
+                        "font_weight": "300",
+                        "text__color": "#000000",
+                        "margin_top": 0,
+                        "margin_bottom": 0
+                      }
+                    },
+                    "item_nUABWW": {
+                      "type": "item",
+                      "settings": {
+                        "text": "Hi",
+                        "align": "left",
+                        "size": 16,
+                        "font_weight": "300",
+                        "text__color": "#000000",
+                        "margin_top": 0,
+                        "margin_bottom": 0
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "item_VqG6YF",
+                    "item_nUABWW"
+                  ]
+                }
+              },
+              "block_order": [
+                "heading_mdmFte",
+                "lsit_caqn9q"
+              ]
+            },
+            "column_Czxpeh": {
+              "type": "column",
+              "settings": {
+                "padding": 10,
+                "bg_color": "#ffffff"
+              },
+              "blocks": {
+                "heading_VnUYBW": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Type your heading here",
+                    "align": "center",
+                    "size": 22,
+                    "font_weight": "800",
+                    "text__color": "#000000",
+                    "margin_top": 0,
+                    "margin_bottom": 0
+                  }
+                },
+                "lsit_qbE73F": {
+                  "type": "lsit",
+                  "settings": {
+                    "text_heading": "Ingredients:",
+                    "align": "left",
+                    "size": 16,
+                    "font_weight": "300",
+                    "text__color": "#000000",
+                    "margin_top": 0,
+                    "margin_bottom": 0
+                  },
+                  "blocks": {
+                    "item_BE4FEm": {
+                      "type": "item",
+                      "settings": {
+                        "text": "Hello",
+                        "align": "left",
+                        "size": 16,
+                        "font_weight": "300",
+                        "text__color": "#000000",
+                        "margin_top": 0,
+                        "margin_bottom": 0
+                      }
+                    },
+                    "item_HmAgjd": {
+                      "type": "item",
+                      "settings": {
+                        "text": "Hi",
+                        "align": "left",
+                        "size": 16,
+                        "font_weight": "300",
+                        "text__color": "#000000",
+                        "margin_top": 0,
+                        "margin_bottom": 0
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "item_BE4FEm",
+                    "item_HmAgjd"
+                  ]
+                }
+              },
+              "block_order": [
+                "heading_VnUYBW",
+                "lsit_qbE73F"
+              ]
+            }
+          },
+          "block_order": [
+            "column_6mMYAf",
+            "column_UrdwHG",
+            "column_ga6zGV",
+            "column_Czxpeh"
+          ]
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "row_iTbybC"
       ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
+      "settings": {}
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "custom-section"
   ]
 }
